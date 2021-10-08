@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Kemat Eats</a>
+            </header>
+
+            <h1><span>The Healthy</span> Eating Experience</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A mollitia magnam corrupti quod voluptate vitae non quis veritatis itaque maiores!</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Houston"</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas tempora labore, porro possimus dolores ullam neque tenetur blanditiis, at, error esse harum? Architecto ut eum vero hic esse delectus voluptas aspernatur sapiente maxime consectetur repudiandae, sequi distinctio porro voluptatum quaerat similique quae velit maiores repellendus ab dolorem adipisci fugit aliquid! Inventore saepe aliquam officia impedit molestiae sit, cum iusto assumenda autem accusantium praesentium optio minima excepturi, numquam magni distinctio placeat non ullam ipsam reprehenderit. A impedit totam tempora ab.</p>
+        </div>
+        <img src="images/food.jpeg" alt="Picture of food in a bowl">
+    </section>
+
+    <script>
+        let btn = document.getElementById("cta-btn")
+        let overlay = document.getElementById("overlay")
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+            
+        })
+    </script>
+</body>
+</html>
